@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "nextchat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.0.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+    "axios": "^0.24.0",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-chat-engine": "^1.11.22",
+    "react-dom": "^17.0.2"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/alamorre/nextjs-chat-tutorial/",
+  "author": "LuciLua <luci.lua81@gmail.com>",
+  "license": "MIT"
 }
