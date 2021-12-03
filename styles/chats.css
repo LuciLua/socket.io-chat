@@ -5,7 +5,11 @@
   justify-content: center;
   align-items: center;
 
+  min-height: 100vh!important;
+
   max-height: 900vh !important;
+
+  position: relative;
 
 }
 
@@ -13,23 +17,29 @@
   display: none;
 }
 
-.ce-chat-engine{
-  width: 100vw!important;
-
-margin: 0 !important;
-
-
-position: relative;
-
-}
 
 .ce-wrapper{
   width: 100%;
   padding: 0 !important;
 
   position: relative!important;
+
+  height: 100%;
 }
 
+
+.ce-chat-engine{
+  width: 100vw!important;
+
+margin: 0 !important;
+
+height: 100vh;
+min-height: 100vh !important;
+
+
+position: relative;
+
+}
 .background{
   height: 100vh;
   width: 100vw ;
@@ -75,7 +85,8 @@ position: relative;
 }
 
 .ce-active-chat-card {
-  background-color: #0880ff !important;
+  border: #0880ff 2px solid !important;
+  background-color: transparent!important;
 }
 
 .ce-chat-title-text {
@@ -122,7 +133,7 @@ position: relative;
 }
 
 .ce-primary-button {
-  background-color: #9a97fc !important;
+  background-color: #0880ff !important;
 }
 
 .ce-message-date-text {
@@ -130,11 +141,12 @@ position: relative;
 }
 
 .ce-my-message-bubble {
-  background-color: #726dfe !important;
+  background-color: #0880ff !important;
 }
 
+/* enviando msg */
 .ce-my-message-sinding-bubble {
-  background-color: #938ffe !important;
+  background-color: #3999ff !important;
 }
 
 .ce-my-message-timestamp {
@@ -192,7 +204,7 @@ position: relative;
 }
 
 .ce-their-message-bubble {
-  background-color: #535a6d !important;
+  background-color: #0000007b !important;
   color: rgba(255, 255, 255, 0.705) !important;
 }
 
@@ -254,9 +266,9 @@ position: relative;
 }
 
 .ce-danger-button {
-  background-color: #4a5162 !important;
-  border: 1px solid #9a97fc !important;
-  color: #9a97fc !important;
+  background-color: #c0494910 !important;
+  border: 1px solid #ff23234f !important;
+  color: #fc9797 !important;
 }
 
 .ce-autocomplete-close {
@@ -276,7 +288,14 @@ position: relative;
 }
 
 
-@media only screen and (max-width: 1000px) {
+.ce-chat-title-text{
+  font-size: 16px!important;
+  width: 100%;
+
+  }
+
+
+@media only screen and (max-width: 900px) {
   .background{
     padding: 0;
     width: 100%;
@@ -296,9 +315,20 @@ position: relative;
     padding: 0 !important;
   }
 
+  .ce-chat-title-container{
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+  }
+
   .ce-chat-title{
     width: 100vw !important;
     padding: 0 !important;
+
+    height: 50px;
+
 
     position: absolute !important;
     right: 0;
@@ -320,11 +350,13 @@ position: relative;
     margin: 0 !important;
     position: relative !important;
     top: 0 !important;
+
   }
   .ce-chat-list-mobile-option > div,
   .ce-chat-settings-mobile-option > div{
     width: 100% !important;
     height: 100%;
+
 
     display: flex;
     align-items: center;
@@ -340,5 +372,11 @@ position: relative;
     .ce-chat-title-container{
       margin: 0 !important;
       width: 100% !important;
+    }
+
+    .ce-chat-title-text{
+    font-size: 14px!important;
+    width: 100%;
+
     }
 }
