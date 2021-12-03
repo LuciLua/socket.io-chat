@@ -62,3 +62,35 @@
 .submit-button::hover {
   background-color: #938ffe;
 }
+
+
+@media only screen and (max-width: 1100px) {
+  .background {
+    padding: 0 !important;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: linear-gradient(150deg, #4c19da, #080c1a 100%, #11275c 0);
+  }
+
+  .auth-container{
+    margin: 0!important;
+    position: absolute;
+    right: auto !important ;
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    width: 90vw !important;
+    height: 50vh;
+    padding: 20px 0;
+  }
+
+}
