@@ -1,4 +1,4 @@
-## 🎶 Next Chat App 🎶
+## 🗣 Next Chat App 🗣
 
 **A chat app made in react, still in development**
 
