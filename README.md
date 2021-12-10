@@ -2,6 +2,8 @@
 
 **A chat app made in react, still in development**
 
+I was able to start this project through the tutorial on the [Adam La Morre channel](https://www.youtube.com/channel/UCWf3dHZo_qzhnRkWiobCguw), [video here](https://www.youtube.com/watch?v=Gbnjn-1Q2d8)
+
 <img src="https://img.shields.io/apm/l/react?style=flat-square"> <img src="https://img.shields.io/github/stars/LuciLua/nextChatApp?style=flat-square">
 <img src="https://img.shields.io/github/last-commit/LuciLua/nextChatApp?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/nextChatApp?style=flat-square">
 
