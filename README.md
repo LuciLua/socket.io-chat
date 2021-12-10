@@ -1,31 +1,51 @@
-# NextJS Chat Tutorial
+## 🎶 Next Chat App 🎶
 
-<img 
-    src="https://raw.githubusercontent.com/alamorre/nextjs-chat-app/main/assets/nextjs-chat-tutorial.png" 
-    width="75%" 
-    height="100%"
-/>
+**A chat app made in react, still in development**
 
-This project is powered by [Chat Engine](https://chatengine.io).
+<img src="https://img.shields.io/apm/l/react?style=flat-square"> <img src="https://img.shields.io/github/stars/LuciLua/nextChatApp?style=flat-square">
+<img src="https://img.shields.io/github/last-commit/LuciLua/nextChatApp?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/nextChatApp?style=flat-square">
 
-## Tutorial Setup
 
-Download Code > Zip from [the main branch](https://github.com/alamorre/nextjs-chat-tutorial/).
+## 🛠 Tecnologias usadas
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+ 
 
-Follow the Video Tutorial [right here](https://chatengine.io).
 
-Push to your own repo and link to [vercel](https://vercel.io).
+## 🚀 How to start
 
-## Setup Finished Project
+If you want to learn a little about how this application is being built, as well as the technologies used, take a look at this topic, please pay attention to the MIT license and its limitations, good studies! Feel free to mark insues in this repository too
 
-For the finished version of this project, go to [the last branch](https://github.com/alamorre/nextjs-chat-tutorial/tree/3-chats).
+### 📌 Requirement
 
-Go to [Chat Engine](https://chatengine.io) and create a account and project.
+> node package manager (NPM or YARN)
 
-Find the Private Key `c2f82e63-9978-4c5c-9c17-8b0dec845dc6` and Project ID `b60a6d8b-d377-477e-af88-e47de35b3e89` then replace the values with your API keys.
+### ✨ Now are you ready to start 
 
-The project has been deleted so those keys won't work anymore.
+> clone the repository
+<code> git clone https://github.com/LuciLua/nextChatApp.git</code>
 
-### `yarn dev`
+> open project folder
+<code> cd ./nextChatApp</code>
 
-Install everything with `yarn` then run `yarn dev` to get up and running.
+> install all packages using npm or yarn manager (using NPM)
+<code> npm i </code>
+
+> start the development server (using NPM)
+<code> npm run dev </code>
+
+### 🏗 Build 
+
+> to make a build (using NPM)
+<code> npm build </code>
+
+> to start the server in production-ready mode (using NPM)
+<code> npm run start </code>
+
+
+## 🖼 Preview
+
+**So far, this is the preview, but you can check it out at [this updated link](https://next-chat-app-five.vercel.app/)**
+
+<center><img src="./loginS.png"/></center>
+<center><img src="./chatS.png"/></center>
+<center><img src="./chatSM.png"/></center>
