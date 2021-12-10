@@ -8,7 +8,7 @@ I was able to start this project through the tutorial on the [Adam La Morre chan
 <img src="https://img.shields.io/github/last-commit/LuciLua/nextChatApp?style=flat-square"> <img src="https://img.shields.io/github/commit-activity/w/LuciLua/nextChatApp?style=flat-square">
 
 
-## 🛠 Tecnologias usadas
+## 🛠 Technologies used
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
  
 
