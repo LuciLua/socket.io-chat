@@ -13,6 +13,7 @@ console.log(username, room)
 
 const socket = io();
 
+
 // Join chatroom
 socket.emit('joinRoom', { username, room })
 
@@ -31,10 +32,14 @@ function scrollBottomAlways() {
 }
 
 
-// Message from server
-socket.on('message', message => {
-    console.log(message)
-    outputMessage(message)
+// Message from server (always then sen d amessage, this is invoked)
+socket.on('message', (message, who) => {
+    console.log(message, who)
+    outputMessage(message, who)
+
+
+    // [test] - emit: send to server.
+    socket.emit('test', 'luci')
 
     // Scroll down
     scrollBottomAlways()
@@ -58,12 +63,12 @@ chatForm.addEventListener('submit', (e) => {
 
 // leave room
 btnLeave.addEventListener('click', (e) => {
-   window.location.href = '/'
+    window.location.href = '/'
 })
 
 
 // output message to DOM
-function outputMessage(message) {
+function outputMessage(message, who) {
     const li = document.createElement('li')
     li.className = 'msg-c'
     li.classList.add('message')
@@ -77,12 +82,12 @@ function outputMessage(message) {
 }
 
 // add room name to DOM
-function outputRoomName(room){
+function outputRoomName(room) {
     roomName.innerHTML = room;
 }
 
 // add users to DOM
-function outputUsers(users){
+function outputUsers(users) {
     console.log(users)
     usersDOMSelect.innerHTML = `
     ${users.map(user => `<li>🦝 ${user.username}</li>`).join('')}`;

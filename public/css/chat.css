@@ -21,7 +21,6 @@
 .container .middle {
   width: 100%;
   height: 300px;
-  background-color: red;
 
   display: flex;
 }
@@ -38,11 +37,11 @@
 .container .middle .rooms h1 {
   color: #fff;
   font-size: 14px;
-  padding: 20px 10px;
-
   font-weight: 400;
 
   border-bottom: 1px solid #9662a06e;
+  background-color: rgb(116, 67, 141);
+  padding: 5px;
 }
 .container .middle .rooms h1 span {
   color: #fff;
@@ -71,18 +70,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.container .middle .chat {
   background-color: #fff;
   height: 100%;
   width: 70%;
-
+  
   display: flex;
   flex-direction: column;
-
+  
   overflow-y: scroll;
 }
+
 
 .container .middle .chat ul.messages{
     width: 100%;
@@ -96,6 +93,9 @@
 .container .middle .chat ul.messages li.msg-c{
     width: fit-content;
     border-radius: 4px;
+    margin-left: auto;
+
+    word-break: break-all;
 }
 
 .container .middle .chat ul.messages li.msg-c .user{
@@ -170,4 +170,66 @@
 
 .container form.message-input button a:hover {
   background: var(--secondaryColor);
+}
+
+@media (max-width: 700px){
+  .container{
+    width: 100%;
+    height: 100%;
+    min-height: 100dvh;
+    max-height: 100dvh;
+
+    padding: 0;
+
+    position: relative;
+  }
+
+  .container header{
+    min-height: 20px;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+  }
+
+
+  .container header button{
+    padding: 0;
+  }
+
+  .container form.message-input{
+    max-height: 40px;
+    height: 40px;
+    min-height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container form.message-input input{
+    height: 100%;
+  }
+
+
+  .container .middle{
+    height: calc(100dvh - 90px);
+    min-height: calc(100dvh - 90px);
+    max-height: calc(100dvh - 90px);
+
+    flex-direction: column;
+
+  }
+
+  .container .middle .rooms{
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+  }
+
+  .container .middle .chat{
+    width: 100%;
+  }
+
 }

@@ -17,13 +17,19 @@ const botName = '🤖 bot'
 // Run when client connects
 io.on('connection', socket => {
 
+    // [test] on: receive from server/create on server
+    socket.on('test', who => {
+        console.log(who)
+        socket.emit('test', 'asdasdsads')
+    })
+
     socket.on('joinRoom', ({ username, room }) => {
 
         const user = userJoin(socket.id, username, room)
 
         socket.join(user.room)
 
-        // Welcome current user
+        // Welcome current user - emit here: server to client
         socket.emit('message', formatMessage(botName, `👋 Welcome to chat, ${user.username}!`))
 
         // broadcast when a user connects
